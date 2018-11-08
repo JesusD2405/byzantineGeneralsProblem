@@ -1,0 +1,113 @@
+<div class="container" style="margin-top: 50px;margin-bottom: 50px;">
+	
+	<div class="row">
+		
+		<div class="col s12 m12 l12">
+			<div class="card">
+				<div class="card-content">
+					<div align="center">
+
+						<h5 style="font-weight: bold;"> Problema de los generales bizantinos</h5>
+						
+					</div>
+				</div>
+					<div class="card-tabs">
+					<ul class="tabs tabs-fixed-width">
+					<li class="tab"><a class="active" href="#test1">Introducción</a></li>
+					<li class="tab"><a href="#test2">Descripción</a></li>
+					<li class="tab"><a href="#test3">Información de la simulación</a></li>
+					</ul>
+				</div>
+				<div class="card-content grey lighten-4">
+
+					<div id="test1">
+						
+						Los sistemas distribuidos presentan un sinfin de propiedades
+						que los hacen unos candidatos idóneos en distintos escenarios. 
+						Por ejemplo, son sistemas altamente escalables, que pueden
+						ofrecer rendimientos muy elevados. Por otro lado, en cuanto
+						a la seguridad se refiere, un sistema distribuido presenta la
+						ventaja de eliminar el único punto crítico que supone un
+						sistema centralizado, así como la supremacía que implica el
+						control de dicho punto crítico.
+						<br><br>
+						Sin embargo, uno de los problemas tambien de seguridad 
+						asociado a los sistemas distribuidos es la naturaleza poco
+						controlable de las entidades que participan en el sistema
+						distribuido. Las entidades que lo forman tienen cierto grado
+						de autonomía y, por lo tanto, su comportamiento puede ser
+						alterado, ya sea a causa de fallos no deseados dentro de la
+						propia entidad, como a causa de la existencia de entidades
+						con intereses contrarios al resto del sistema. Uno de los
+						problemas de seguridad asociados a los sistemas distribuidos
+						es el conocido como los generales bizantinos.
+
+						<br><br>
+
+						<a href="https://web.ua.es/en/recsi2014/documentos/papers/bitcoins-y-el-problema-de-los-generales-bizantinos.pdf">Leer más..</a>
+
+					</div>
+
+					<div id="test2">
+						
+						El problema de los generales bizantinos es un experimento
+						mental creado para ilustrar el dilema de lograr
+						un consenso entre un conjunto de entidades con un objetivo
+						comun cuando entre ellas pueden existir traidores, es decir, 
+						entidades con objetivos opuestos que intenten dinamitar el
+						proceso. Ademas, se supone que las comunicaciones entre 
+						dichas entidades son limitadas e inseguras. 
+						<br><br>
+						El problema se presenta como una analogía con un escenario de guerra, donde
+						un grupo de generales bizantinos se encuentran acampados
+						con sus tropas alrededor de una ciudad enemiga que desean
+						atacar. Despues de observar el comportamiento del enemigo,
+						los generales deben comunicar sus observaciones y ponerse
+						de acuerdo en un plan de batalla comun que permita atacar 
+						la ciudad y vencer. Para ello, los generales se comunican
+						unicamente a través de mensajeros. Además, existe la posibilidad 
+						que algunos de los generales sean traidores y, por lo
+						tanto, decidan enviar mensajes con información errónea con el 
+						objetivo de confundir a los generales leales. Un algoritmo que
+						solucione el problema debe asegurar que todos los generales
+						leales acuerdan un mismo plan de acción y que unos pocos 
+						traidores no pueden conseguir que el plan adoptado por los
+						generales leales sea equivocado.
+						<br><br>
+
+						<a href="https://elbitcoin.org/prueba-de-trabajo-solucion-problema-generales-bizantinos/">Leer más..</a>
+
+					</div>
+
+					<div id="test3">
+
+						La presente es una simulación del problema de los generales bizantinos, orientado a resultados estadísticos que arroja el resultado de la aplicación del algoritmo.
+						<br><br>
+			        	El código fuente fue desarrollado bajo el Framework de Js <a href="https://angular.io/">Angular</a> (Versión 6) y el framework de Css <a href="https://materializecss.com/">Materialize</a> usando finalmente el componente para las gráficas estadísticas <a href="https://www.chartjs.org/">ChartJs</a> 
+			        	<br><br>
+			        	El proyecto es una adaptación en Typescript tomado del canal en <a href="https://www.youtube.com/watch?v=ReylEwPgpsE&t=526s">YouTube</a> cuyo desarrollo fue hecho en C++.
+			        	<br><br>
+			        	Actualmente el código fuente, no está completamente terminado, falta la adaptación de una última función del dicho ejemplo en C++. Pero que sin embargo muestra en gran parte el funcionamiento del algoritmo.
+			        	<br><br>
+			        	Para iniciar la simulación, por favor vaya a configuración y seleccione la opción de iniciar la simulación
+			        	
+					</div>
+					<!-- <canvas id="Generals">{{ charGenerals }}</canvas> -->
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="fixed-action-btn">
+	<a class="btn-floating btn-large red">
+	<i class="large material-icons">settings</i>
+	</a>
+	<ul>
+		<li><a [routerLink]="['/simulation']" class="btn-floating pink"><i class="material-icons">play_arrow</i></a></li>
+		<li><a class="btn-floating deep-orange"><i class="material-icons">timeline</i></a></li>
+	</ul>
+</div>
